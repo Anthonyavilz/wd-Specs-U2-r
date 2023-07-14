@@ -30,6 +30,9 @@ function App() {
   const addMovie = (movie) => {
     setWatchList([...watchList, movie])
   }
+  // The spread operator extends the previous watchlist and then adds the other new movie
+  // The order that you use the spread operator matters because if you were to put it at the end, then the previous movies
+  // would show up at the end rather than the front
 
   const removeMovie = (movie) => {
     const newState = watchList.filter((mov) => {

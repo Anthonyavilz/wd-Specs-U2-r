@@ -17,6 +17,7 @@ const MovieCard = ({movie, watchList,addMovie, removeMovie}) => {
     (<button onClick={() => addMovie(movie)}>Add to List</button>) 
     : 
     (<button onClick={() => removeMovie(movie)}>Remove</button>)
+    // This button just conditionally renders what the button says whether or not it's in the watchlist or not
 
     return (
         <div className="movie-card">
